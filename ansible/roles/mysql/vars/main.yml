@@ -1,0 +1,19 @@
+---
+# vars file for ./mysql
+env:
+ RUNLEVEL: "1"
+root_db_password: "mydb123"
+port: "3306"
+socket: "/var/run/mysqld/mysqld.sock"
+datadir: "/var/lib/mysql"
+socket: "/var/run/mysqld/mysqld.sock"
+pid-file: "/var/run/mysqld/mysqld.pid"
+mysql_slow_query_log: "enabled"
+slow_query_log: "1"
+slow_query_log_file: "/var/log/mysql/mysql-slow.log"
+innodb_buffer_pool_size: "128M"
+innodb_log_file_size: "256M"
+mysql_max_connections: "3001"
+max_connections: "3000"
+max_connections: "150"
+

@@ -1,0 +1,3 @@
+---
+# vars file for /etc/ansible/roles/webserver
+pkg1: httpd
