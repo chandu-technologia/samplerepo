@@ -5,7 +5,7 @@
   become: yes
   become_method: sudo
   vars_files:
-    - /etc/ansible/environments/{{env}}/group_vars/main.yml
+    - /var/lib/jenkins/workspace/test/ansible/environments/{{ env }}/group_vars/main.yml
   roles:
     - tomcat_install
     - war_deploy
