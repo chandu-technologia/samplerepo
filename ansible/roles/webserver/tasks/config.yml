@@ -1,0 +1,8 @@
+---
+# tasks file for /etc/ansible/roles/webserver
+  - name: Copy httpd configuration file
+    copy: src=files/httpd.original dest=/etc/httpd/conf/httpd.conf
+  - name: Copy index.html file
+    template: src=templates/index.html.j2 dest=/var/www/html/index.html
+    notify:
+    - restart httpd

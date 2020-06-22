@@ -1,0 +1,10 @@
+---
+- hosts: my_servers
+  remote_user: root
+  become: yes
+  become_method: sudo
+  vars_files:
+    - /etc/ansible/environments/{{ env }}/group_vars/main.yml
+  roles:
+    - tomcat_install
+    - war_deploy

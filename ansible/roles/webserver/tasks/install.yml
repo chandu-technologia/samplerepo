@@ -1,0 +1,4 @@
+---
+# tasks file for /etc/ansible/roles/webserver
+  - name: Install httpd Package
+    yum: name={{ pkg1 }} state=present

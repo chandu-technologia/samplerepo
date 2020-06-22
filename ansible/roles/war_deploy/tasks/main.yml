@@ -1,0 +1,5 @@
+---
+- name: Download WAR to server
+  copy: src=/var/lib/jenkins/workspace/test/target/helloworld-1.1.war dest=/usr/local/tomcat/apache-tomcat-7.0.104/webapps/
+  notify:
+      - Restart tomcat

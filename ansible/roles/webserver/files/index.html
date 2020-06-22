@@ -1,0 +1,8 @@
+Web Servers<br>
+{% for server in groups.my_servers %}
+{{ server }} {{ hostvars[server].ansible_default_ipv4.address }} - free memory: {{ hostvars[server].facter_memoryfree
+}}<br>
+{% endfor %}
+
+this is the test index
+to check the handlers utility of ansible.
