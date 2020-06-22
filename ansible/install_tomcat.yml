@@ -1,4 +1,5 @@
 ---
+# Sample Playbook
 - hosts: my_servers
   remote_user: root
   become: yes
@@ -8,3 +9,4 @@
   roles:
     - tomcat_install
     - war_deploy
+    
