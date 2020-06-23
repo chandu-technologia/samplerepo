@@ -9,6 +9,18 @@
   <version>1.0.${env.BUILD_NUMBER}.0</version>
   <packaging>war</packaging>
   
+  <name>Hello World</name>
+  <description>The most basic of Java programs.</description>
+  <url>https://www.coveros.com/</url>
+  <inceptionYear>2018</inceptionYear>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <jdk.version>1.8</jdk.version>
+
+    <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+  </properties>
 <servers>
          <server>
       <username>admin</username>
@@ -34,20 +46,6 @@
         <url>http://192.168.0.203:8081/artifactory/sample_maven_snapshot_repo</url>
     </snapshotRepository>
 </distributionManagement>
-
-  <name>Hello World</name>
-  <description>The most basic of Java programs.</description>
-  <url>https://www.coveros.com/</url>
-  <inceptionYear>2018</inceptionYear>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jdk.version>1.8</jdk.version>
-
-    <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
-  </properties>
-
   <build>
     <plugins>
       <plugin>
