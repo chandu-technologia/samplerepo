@@ -21,31 +21,7 @@
 
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
   </properties>
-<servers>
-         <server>
-      <username>admin</username>
-      <password>Jfrog123</password>
-      <id>release</id>
-    </server>
-    <server>
-      <username>admin</username>
-      <password>Jfrog123</password>
-      <id>snapshots</id>
-    </server>
-  </servers>
-  
-    <distributionManagement>
-    <repository>
-        <id>release</id>
-        <name>localhost.localdomain-releases</name>
-        <url>http://192.168.0.203:8081/artifactory/sample_maven_repo</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>localhost.localdomain-snapshots</name>
-        <url>http://192.168.0.203:8081/artifactory/sample_maven_snapshot_repo</url>
-    </snapshotRepository>
-</distributionManagement>
+
   <build>
     <plugins>
       <plugin>
