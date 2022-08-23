@@ -1,100 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.coveros.demo</groupId>
-  <artifactId>helloworld</artifactId>
-  <version>1.0.0</version>
-  <packaging>war</packaging>
-  
-  <name>Hello World</name>
-  <description>The most basic of Java programs.</description>
-  <url>https://www.coveros.com/</url>
-  <inceptionYear>2018</inceptionYear>
-
+  <groupId>com.technologis.software</groupId>
+  <artifactId>sample</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>sample</name>
+  <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jdk.version>1.8</jdk.version>
-    <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-<dependencies>
-<dependency>
-<groupId>org.apache.maven</groupId>
-<artifactId>maven-plugin-api</artifactId>
-</dependency>
-<dependency>
-<groupId>org.apache.maven.surefire</groupId>
-<artifactId>surefire-booter</artifactId>
-</dependency>
-<dependency>
-<groupId>org.apache.maven.surefire</groupId>
-<artifactId>maven-surefire-common</artifactId>
-</dependency>
-<dependency>
-<groupId>org.codehaus.plexus</groupId>
-<artifactId>plexus-utils</artifactId>
-</dependency>
-<dependency>
-<groupId>org.apache.maven</groupId>
-<artifactId>maven-artifact</artifactId>
-</dependency>
-<dependency>
-<groupId>org.apache.maven</groupId>
-<artifactId>maven-project</artifactId>
-</dependency>
-<dependency>
-<groupId>org.apache.maven</groupId>
-<artifactId>maven-core</artifactId>
-</dependency>
-<dependency>
-<groupId>org.apache.maven</groupId>
-<artifactId>maven-toolchain</artifactId>
-</dependency>
-<dependency>
-<groupId>org.apache.maven.plugin-tools</groupId>
-<artifactId>maven-plugin-annotations</artifactId>
-<scope>compile</scope>
-</dependency>
-</dependencies>
   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>${maven.compiler.plugin.version}</version>
-        <configuration>
-          <source>${jdk.version}</source>
-          <target>${jdk.version}</target>
-        </configuration>
-      </plugin>
-     <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-war-plugin</artifactId>
-  <version>2.2</version>
-  <configuration>
-    <failOnMissingWebXml>false</failOnMissingWebXml>
-  </configuration>
-</plugin>
- <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-resources-plugin</artifactId>
-              <version>2.6</version>
-            </plugin> 
-      
-    <plugin>
-<artifactId>maven-surefire-plugin</artifactId>
-<dependencies>
-<dependency>
-<groupId>org.apache.maven.surefire</groupId>
-<artifactId>surefire-shadefire</artifactId>
-<version>${project.version}</version>
-</dependency>
-</dependencies>
-</plugin>
-      
-    </plugins>
+  <plugins>
+  <plugin>
+   <artifactId>maven-resources-plugin</artifactId>
+   <version>3.0.0</version>
+   </plugin>
+  </plugins>
   </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+<distributionManagement>
+    <repository>
+        <id>mvn-test</id>
+        <name>localhost.localdomain-releases</name>
+        <url>http://192.168.2.202:8081/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>localhost.localdomain-snapshots</name>
+        <url>http://192.168.2.202:8081/artifactory/libs-release-local</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
