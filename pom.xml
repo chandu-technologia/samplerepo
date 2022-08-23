@@ -30,7 +30,7 @@
   </dependencies>
 <distributionManagement>
     <repository>
-        <id>mvn-test</id>
+        <id>central</id>
         <name>localhost.localdomain-releases</name>
         <url>http://192.168.2.202:8081/artifactory/libs-release-local</url>
     </repository>
