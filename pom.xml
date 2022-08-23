@@ -32,12 +32,12 @@
       <repository>
         <id>artifactory</id>
         <name>HelloMaven-release</name>
-        <url>http://:8081/artifactory/samplerepo-release-local</url>
+        <url>http://192.168.2.202:8081/artifactory/samplerepo-release-local</url>
        </repository>
     <snapshotRepository>
         <id>snapshots</id>
           <name>HelloMaven-snapshot</name>
-          <url>http://localhost:8081/artifactory/samplerepo-snapshot-local</url>
+          <url>http://192.168.2.202:8081/artifactory/samplerepo-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
