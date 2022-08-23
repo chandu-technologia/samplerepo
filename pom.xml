@@ -4,7 +4,7 @@
   <groupId>com.technologis.software</groupId>
   <artifactId>samplerepo</artifactId>
   <packaging>jar</packaging>
-  <version>${env.BUILD_NUMBER}-SNAPSHOT</version>
+  <version>${env.BUILD_NUMBER}</version>
   <name>samplerepo</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -34,10 +34,5 @@
         <name>HelloMaven-release</name>
         <url>http://localhost:8081/artifactory/samplerepo-release</url>
        </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-          <name>HelloMaven-snapshot</name>
-          <url>http://localhost:8081/artifactory/samplerepo-snapshot</url>
-    </snapshotRepository>
 </distributionManagement>
 </project>
