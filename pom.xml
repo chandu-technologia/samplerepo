@@ -29,15 +29,10 @@
     </dependency>
   </dependencies>
 <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>libs-releases</name>
-        <url>http://192.168.2.202:8081/artifactory/samplerepo-release</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>libs-snapshot</name>
-        <url>http://192.168.2.202:8081/artifactory/samplerepo-snapshot</url>
-    </snapshotRepository>
+      <repository>
+        <id>artifactory</id>
+        <name>HelloMaven-release</name>
+        <url>http://localhost:8081/artifactory/samplerepo-release</url>
+       </repository>
 </distributionManagement>
 </project>
