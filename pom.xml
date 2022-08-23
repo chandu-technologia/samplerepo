@@ -4,7 +4,7 @@
   <groupId>com.technologis.software</groupId>
   <artifactId>sample</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>${env.BUILD_NUMBER}-SNAPSHOT</version>
   <name>sample</name>
   <url>http://maven.apache.org</url>
   <properties>
