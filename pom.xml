@@ -34,10 +34,10 @@
         <name>HelloMaven-release</name>
         <url>http://localhost:8081/artifactory/samplerepo-release</url>
        </repository>
-       <repository>
+       <snapshotrepository>
         <id>snapshots</id>
           <name>HelloMaven-snapshot</name>
           <url>http://localhost:8081/artifactory/samplerepo-snapshot</url>
-    </repository>
+    </snapshotrepository>
 </distributionManagement>
 </project>
