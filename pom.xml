@@ -31,12 +31,12 @@
 <distributionManagement>
     <repository>
         <id>central</id>
-        <name>localhost.localdomain-releases</name>
+        <name>libs-releases</name>
         <url>http://192.168.2.202:8081/artifactory/libs-release</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>localhost.localdomain-snapshots</name>
+        <name>libs-snapshot</name>
         <url>http://192.168.2.202:8081/artifactory/libs-snapshot</url>
     </snapshotRepository>
 </distributionManagement>
