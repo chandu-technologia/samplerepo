@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.technologis.software</groupId>
-  <artifactId>sample</artifactId>
+  <artifactId>samplerepo</artifactId>
   <packaging>jar</packaging>
   <version>${env.BUILD_NUMBER}-SNAPSHOT</version>
-  <name>sample</name>
+  <name>samplerepo</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,5 +34,10 @@
         <name>HelloMaven-release</name>
         <url>http://localhost:8081/artifactory/samplerepo-release</url>
        </repository>
+       <snapshotRepository>
+        <id>snapshots</id>
+          <name>HelloMaven-snapshot</name>
+          <url>http://localhost:8081/artifactory/samplerepo-snapshot</url>
+    </snapshotRepository>
 </distributionManagement>
 </project>
