@@ -22,3 +22,4 @@ public class AppTest extends TestCase {
     App app = new App(name);
     assertEquals("https://api.github.com/users/chandu-technologia", app.getUserInfoURL());
   }
+}
