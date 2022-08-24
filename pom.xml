@@ -37,6 +37,7 @@
             <argument>testing</argument>
           </arguments>
         </configuration>
+      </plugin>
   </plugins>
   </build>
   <dependencies>
