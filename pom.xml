@@ -78,4 +78,5 @@
           <name>HelloMaven-snapshot</name>
           <url>http://ec2-13-234-240-162.ap-south-1.compute.amazonaws.com/:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
+</distributionManagement>
 </project>
