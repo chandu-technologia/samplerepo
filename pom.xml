@@ -71,12 +71,12 @@
       <repository>
         <id>artifactory</id>
         <name>HelloMaven-release</name>
-        <url>http://ec2-13-234-240-162.ap-south-1.compute.amazonaws.com:8081/artifactory/libs-release-local</url>
+        <url>http://ec2-43-204-38-63.ap-south-1.compute.amazonaws.com:8081/artifactory/libs-release-local</url>
        </repository>
     <snapshotRepository>
         <id>snapshots</id>
           <name>HelloMaven-snapshot</name>
-          <url>http://ec2-13-234-240-162.ap-south-1.compute.amazonaws.com:8081/artifactory/libs-snapshot-local</url>
+          <url>http://ec2-43-204-38-63.ap-south-1.compute.amazonaws.com:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
